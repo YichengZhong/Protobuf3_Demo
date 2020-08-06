@@ -1,4 +1,4 @@
-#Protobuf3
+#Protobuf3#
 Protobuf3的优点
 灰度升级、微服务有关系
 
@@ -14,7 +14,7 @@ Protocol Buffers 是一种灵活，高效，自动化机制的结构数据序列
 ##项目中为什么使用
 
 
-##1、安装方式
+##1、安装方式##
     sudo apt-get install autoconf automake libtool curl make g++ unzip
     git clone https://github.com/google/protobuf.git
     cd protobuf
@@ -27,7 +27,7 @@ Protocol Buffers 是一种灵活，高效，自动化机制的结构数据序列
     sudo ldconfig # refresh shared library cache.
     
 ##2、 基本例子 ##
-###2.1 Proto文件
+###2.1 Proto文件###
     
     syntax = "proto3";//指定版本 使用protobuf3
     message Account 
@@ -40,7 +40,7 @@ Protocol Buffers 是一种灵活，高效，自动化机制的结构数据序列
     	string password = 3;
     }
 
-###2.2 编译Proto文件
+###2.2 编译Proto文件###
     
     protoc --cpp_out=./ project.proto
 
@@ -52,10 +52,10 @@ Protocol Buffers 是一种灵活，高效，自动化机制的结构数据序列
     `--cpp_out是参数， 指定生成C++代码， =后面指定生成的目录。`
     project.proto是定义的文件。
 
-###2.3 结果生成
+###2.3 结果生成###
     project.pb.h 和 project.pb.cc
 
-###2.4 以单个字段为例子
+###2.4 以单个字段为例子###
       void clear_name();
       const std::string& name() const;
       void set_name(const std::string& value);
@@ -70,7 +70,7 @@ Protocol Buffers 是一种灵活，高效，自动化机制的结构数据序列
       void _internal_set_name(const std::string& value);
       std::string* _internal_mutable_name();
 
-###2.6 文件读取例子
+###2.6 文件读取例子###
 address.proto
 
     syntax = "proto3";//指定版本 使用protobuf3
@@ -147,7 +147,7 @@ write.cpp
 
 
 
-###2.5 序列化与反序列化
+###2.5 序列化与反序列化###
 
     
 1、技术点
