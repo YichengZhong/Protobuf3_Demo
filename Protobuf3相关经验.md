@@ -16,7 +16,7 @@ Protocol Buffers 是一种灵活，高效，自动化机制的结构数据序列
 Protobuf兼容性比较好，并且速度很快。业内有成熟的经验可以借用。
 
 
-##1、安装方式
+##1、安装方式##
     sudo apt-get install autoconf automake libtool curl make g++ unzip
     git clone https://github.com/google/protobuf.git
     cd protobuf
@@ -29,7 +29,7 @@ Protobuf兼容性比较好，并且速度很快。业内有成熟的经验可以
     sudo ldconfig # refresh shared library cache.
     
 ##2、 基本例子 ##
-###2.1 Proto文件
+###2.1 Proto文件###
     
     syntax = "proto3";//指定版本 使用protobuf3
     message Account 
@@ -42,7 +42,7 @@ Protobuf兼容性比较好，并且速度很快。业内有成熟的经验可以
     	string password = 3;
     }
 
-###2.2 编译Proto文件
+###2.2 编译Proto文件###
     
     protoc --cpp_out=./ project.proto
 
@@ -54,10 +54,10 @@ Protobuf兼容性比较好，并且速度很快。业内有成熟的经验可以
     `--cpp_out是参数， 指定生成C++代码， =后面指定生成的目录。`
     project.proto是定义的文件。
 
-###2.3 结果生成
+###2.3 结果生成###
     project.pb.h 和 project.pb.cc
 
-###2.4 以单个字段为例子
+###2.4 以单个字段为例子###
       void clear_name();
       const std::string& name() const;
       void set_name(const std::string& value);
