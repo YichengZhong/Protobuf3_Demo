@@ -194,9 +194,12 @@ read.cpp
 
 编译方式：
 
+    g++ -std=c++11 address.pb.cc wirte.cpp -o read `pkg-config --cflags --libs protobuf`
+    g++ -std=c++11 address.pb.cc read.cpp -o read `pkg-config --cflags --libs protobuf`
 
 
-###2.5 序列化与反序列化
+
+###2.5 序列化与反序列化###
 
     
 1、技术点
