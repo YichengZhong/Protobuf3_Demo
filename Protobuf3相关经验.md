@@ -197,6 +197,11 @@ read.cpp
     g++ -std=c++11 address.pb.cc wirte.cpp -o read `pkg-config --cflags --libs protobuf`
     g++ -std=c++11 address.pb.cc read.cpp -o read `pkg-config --cflags --libs protobuf`
 
+运行方式：
+
+    ./wirte ADDRESS_BOOL_FILE
+    ./read ADDRESS_BOOL_FILE
+
 
 
 ###2.5 序列化与反序列化###
