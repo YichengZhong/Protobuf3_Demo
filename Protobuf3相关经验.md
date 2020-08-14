@@ -234,4 +234,6 @@ Demo
 
 2、编码、序列化等
 
+Protobuf采用TLV编码
+
 https://blog.csdn.net/tennysonsky/article/details/74096431?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param
